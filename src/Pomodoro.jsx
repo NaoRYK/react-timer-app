@@ -1,14 +1,18 @@
 import React, {useEffect, useState} from 'react'
+
+import { Modes } from './modes';
+
 function padTime(time){
   return time.toString().padStart(2,"0");
 
 }
 
-const Pomodoro = () => {
+const Pomodoro = (styleRoot) => {
 
-  const [title, setTitle] = useState("Inicia el contador para comenzar")
+  const [title, setTitle] = useState("Cronómetro")
   const [timeLeft, settimeLeft] = useState(25 * 60)
   const [isRunning, setisRunning] = useState(false)
+  const [isDark,setIsDark] = useState(true);
 
   const minutes = padTime(Math.floor(timeLeft / 60))
   const seconds = padTime(Math.floor(timeLeft - minutes * 60))
@@ -50,27 +54,32 @@ const Pomodoro = () => {
   
 
   return (
-    <div>
+
+
+    <div className='container'>
+
+      <Modes propSetIsDark={setIsDark} propIsDark={isDark} styleRoot={styleRoot} ></Modes>
+
       <h1>{title}</h1>
       <div>
-        <span>
+        <span className='textSpan'>
           {minutes}
         </span>
 
-        <span>
+        <span className='textSpan'>
           :
         </span>
 
-        <span>
+        <span className='textSpan'>
           {seconds}
         </span>
 
       </div>
 
       <div className='buttons-container'>
-        { !isRunning && <button onClick={startTimer}>Start</button>}
-        {isRunning && <button onClick={stopTimer}>Stop</button>}
-        <button onClick={resetTimer}>Reset</button>
+        { !isRunning && <button onClick={startTimer}>Iniciar</button>}
+        {isRunning && <button onClick={stopTimer}>Detener</button>}
+        <button onClick={resetTimer}>Resetear</button>
       </div>
 
 
