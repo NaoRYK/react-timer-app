@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./modes.css"
 
 
 
@@ -11,12 +11,15 @@ var sheet = document.styleSheets[0];
     console.log(propSetIsDark)
 
 
-    console.log( styleRoot)
-    console.log( document.documentElement.style.removeProperty("--backgroundWhite"))
+
     if(propIsDark.propIsDark === true){
 
+        document.documentElement.style.setProperty('--backgroundWhite',"#303030");
+        document.documentElement.style.setProperty('--defaultBlack',"#FFFFFF");
        
         return(
+
+
             <div className='modes' onClick={()=>{
                 console.log("A")
                 propIsDark.propSetIsDark(false)
@@ -28,14 +31,20 @@ var sheet = document.styleSheets[0];
         )
     }
     else if(propIsDark.propIsDark === false){
+        document.documentElement.style.setProperty('--backgroundWhite',"#D9D9D9");
+        document.documentElement.style.setProperty('--defaultBlack',"#000000");
+
         return(
+
             <div className='modes' onClick={()=>{
-                console.log("A")
+            
                 propIsDark.propSetIsDark(true)
             }}>
 
                 <p>Modo oscuro</p>
-                <img src="./Vector.png" id='moon' alt="moon_images" />
+                    
+                <div alt="imagen_luna" id='luna'></div>
+            
             </div>
         )
     }

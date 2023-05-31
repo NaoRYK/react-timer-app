@@ -12,7 +12,7 @@ const Pomodoro = (styleRoot) => {
   const [title, setTitle] = useState("Cronómetro")
   const [timeLeft, settimeLeft] = useState(25 * 60)
   const [isRunning, setisRunning] = useState(false)
-  const [isDark,setIsDark] = useState(true);
+  const [isDark,setIsDark] = useState(false);
 
   const minutes = padTime(Math.floor(timeLeft / 60))
   const seconds = padTime(Math.floor(timeLeft - minutes * 60))
