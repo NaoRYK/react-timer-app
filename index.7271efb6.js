@@ -27358,7 +27358,7 @@ $RefreshReg$(_c, "Modes");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./modes.css":"kGnRr"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./modes.css":"kGnRr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kGnRr":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27521,6 +27521,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"415d4265df381fd":"786KC"}],"kGnRr":[function() {},{}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire4d06")
+},{"415d4265df381fd":"786KC"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire4d06")
 
 //# sourceMappingURL=index.7271efb6.js.map
