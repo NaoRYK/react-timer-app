@@ -7,8 +7,6 @@ function Modes(propIsDark, propSetIsDark,styleRoot){
 
 var sheet = document.styleSheets[0];
     
-    console.log(propIsDark)
-    console.log(propSetIsDark)
 
 
 
@@ -21,7 +19,7 @@ var sheet = document.styleSheets[0];
 
 
             <div className='modes' onClick={()=>{
-                console.log("A")
+
                 propIsDark.propSetIsDark(false)
             }}>
 

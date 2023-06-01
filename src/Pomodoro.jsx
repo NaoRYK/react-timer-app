@@ -9,7 +9,7 @@ function padTime(time){
 
 const Pomodoro = (styleRoot) => {
 
-  const [title, setTitle] = useState("Cronómetro")
+  const [title, setTitle] = useState("Temporizador")
   const [timeLeft, settimeLeft] = useState(25 * 60)
   const [isRunning, setisRunning] = useState(false)
   const [isDark,setIsDark] = useState(false);

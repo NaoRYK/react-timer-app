@@ -1,23 +1,42 @@
 {
   "name": "clase_2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A react timer app",
+  "main": "App.js",
+
   "scripts": {
-    "dev": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "parcel": "^2.8.3",
+
     "prettier": "^2.8.8",
     "process": "^0.11.10"
   },
+  "homepage": "https://naoryk.github.io/react-timer-app/",
   "dependencies": {
+    "create-react-app": "^5.0.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -1,0 +1,41 @@
+.modes {
+  height: 1rem;
+  align-self: flex-end;
+  align-items: center;
+  margin: 0;
+  font-size: 1.5rem;
+  transition: all 1s ease-in;
+  display: flex;
+  position: absolute;
+  top: 5%;
+}
+
+.modes p {
+  color: var(--defaultBlack);
+  margin: 0;
+}
+
+.modes:hover {
+  cursor: pointer;
+}
+
+#sol {
+  margin: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url("sun.5a79a321.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-inline: 1rem;
+}
+
+#luna {
+  height: 1.7rem;
+  width: 1.7rem;
+  background-image: url("Vector.5a07a31d.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-inline: 1rem;
+}
+
+/*# sourceMappingURL=App.css.map */
